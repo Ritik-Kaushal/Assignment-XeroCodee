@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities {
+    .shadow-bottom {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .font-nunito-sans {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+}
