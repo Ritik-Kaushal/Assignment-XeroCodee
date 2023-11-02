@@ -2,6 +2,7 @@ import React from 'react'
 import FeatureIntro from './intro'
 import Comaprison from './comparison'
 import Infrastructure from './infrastructure'
+import Description from './description'
 
 export default function Features() {
     return (
@@ -12,6 +13,7 @@ export default function Features() {
             <FeatureIntro />
             <Comaprison />
             <Infrastructure />
+            <Description />
         </div>
     )
 }
