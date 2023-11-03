@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function Testimonails() {
@@ -7,18 +8,50 @@ export default function Testimonails() {
                 See Our Success Stories
             </div>
 
-            <div className='flex flex-row justify-between'>
-                <div>
-                    <div className='w-[46px] h-[46px] rounded-full bg-[#293FCC] flex items-center justify-center'>
-                        <span className="text-2xl text-white">&lt;</span>
+            <div className='flex flex-row items-center justify-between mt-8'>
+                <div className='w-[30px] h-[30px] md:w-[46px] md:h-[46px] rounded-full bg-[#293FCC] flex items-center justify-center'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" className="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                </div>
+
+                <div className='w-[260px] sm:w-[400px] md:w-[500px] lg:w-[800px] min-h-[230px] xl:w-[1000px] custom-inner custom-outer mx-[8px] sm:mx-[20px] md:mx-[53px] flex flex-col lg:flex-row'>
+                    <div className='w-[230px] min-h-full rounded-tl-[50px] rounded-bl-[50px] bg-[#0C5BC6] hidden lg:flex items-center justify-center'>
+                        <div className='font-[nunito] font-[800] text-[176px] leading-[193px] relative top-[30px] text-white'>
+                            “
+                        </div>
+                    </div>
+
+                    <div className='w-full h-[15px] rounded-tl-[50px] rounded-tr-[50px] bg-[#0C5BC6] flex lg:hidden items-center justify-center'>
+                    </div>
+                    <div className='flex flex-col-reverse md:flex-row justify-between '>
+                        <div className='p-2 lg:ml-[34px] lg:w-[500px] xl:w-[644px] flex flex-col justify-around'>
+                            <div className='font-[nunito] font-[400] text-[16px] lg:text-[18px] leading-[26px] text-[#242331]'>
+                                There are many variations of passages of Lorem Ipsum available
+                                but the majority have sufferg alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage.
+                            </div>
+                            <div className='font-[nunito] font-[600] text-[18px] lg:text-[20px] lg:leading-[31px] text-right'>
+                                <div>- Abcdefgh Ijklmnop</div>
+                                <div>Frontend Engineer</div>
+                            </div>
+                        </div>
+                        <div className='flex items-center justify-center'>
+                            <div className='w-[80px] h-[80px] lg:w-[120px] lg:h-[120px] rounded-full border-8 border-blue-600 mx-[30px] mt-[10px] md:mt-0 flex items-center justify-center'>
+                                <Image src="/assets/testimonials/profile1.png" alt="profile1" width={120} height={120} />
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    B
+                <div className='w-[30px] h-[30px] md:w-[46px] md:h-[46px] rounded-full bg-[#293FCC] flex items-center justify-center'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" className="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
                 </div>
-                <div>
-                    C
-                </div>
+            </div>
+            <div className='flex flex-row p-2 mt-4 space-x-1 justify-center'>
+                <div className='w-[10px] h-[10px] rounded-full bg-[#00000040]'></div>
+                <div className='w-[10px] h-[10px] rounded-full bg-[#00000040]'></div>
+                <div className='w-[10px] h-[10px] rounded-full bg-[#00000040]'></div>
             </div>
         </div>
     )
