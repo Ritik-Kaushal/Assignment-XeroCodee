@@ -1,4 +1,4 @@
-import { ContentListItemsInterface } from "../footer"
+import { ContentListItemsInterface } from "../../../utils/footer"
 
 interface FooterSectionProps {
     heading: string,

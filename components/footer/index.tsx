@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { footerContentList } from './footer'
+import { footerContentList } from '../../utils/footer'
 import SocialCircle from '@/icons/socialCircle'
 import FooterSection from './footerSection'
 
@@ -15,9 +15,9 @@ export default function Footer() {
                                 You get just what you need to run your cloud workloads--no more, no less. Deploy from our single pane of glass, manage them with ease and scale up as fast as your workload grows
                             </div>
                             <div className='flex flex-row gap-5 mt-[50px]'>
-                                <SocialCircle />
-                                <SocialCircle opacity={0.2} />
-                                <SocialCircle opacity={0.2} />
+                                <div className="w-[41px] h-[41px] rounded-full bg-[#C6DEFF]" ></ div>
+                                <div className="w-[41px] h-[41px] rounded-full bg-[#C6DEFF] opacity-[20%]" ></ div>
+                                <div className="w-[41px] h-[41px] rounded-full bg-[#C6DEFF] opacity-[20%]" ></ div>
                                 <div className='flex items-center'>
                                     <Image src="/assets/footer/mail.png" alt="mail icon" width={22} height={22} />
                                 </div>

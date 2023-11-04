@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 import Underline from '../underline'
 import { StepsInterface } from '@/utils/xerocodeeWay'

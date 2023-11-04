@@ -14,6 +14,4 @@ export default function Home() {
       <Subscribe />
     </main >
   )
-
-
 }
