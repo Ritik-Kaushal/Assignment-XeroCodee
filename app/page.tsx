@@ -2,7 +2,7 @@ import Clients from '@/components/clients'
 import Features from '@/components/features'
 import Intro from '@/components/intro'
 import Subscribe from '@/components/subscribe'
-import Testimonails from '@/components/testimonials'
+import Testimonials from '@/components/testimonials'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <Intro />
       <Clients />
       <Features />
-      <Testimonails />
+      <Testimonials />
       <Subscribe />
     </main >
   )

@@ -11,7 +11,9 @@ interface StepsComponentInterface {
 }
 export default function Steps({ path, alt, heading, subheading, reverse = false, height, width }: StepsComponentInterface) {
     return (
-        <div className={`flex flex-col lg:${reverse ? "flex-row-reverse" : "flex-row"} items-center p-4 lg:mt-[71px]`}>
+        <div
+            data-testid="steps"
+            className={`flex flex-col lg:${reverse ? "flex-row-reverse" : "flex-row"} items-center p-4 lg:mt-[71px]`}>
             {/* Image */}
             <div className='xl:ml-[57px] lg:w-1/2 flex justify-center text-center'>
                 <Image src={path} alt="Point21" width={width} height={height} />

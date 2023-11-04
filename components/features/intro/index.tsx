@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function FeatureIntro() {
     return (
-        <div className='mt-[25px] lg:mt-[75px]'>
+        <div data-testid="feature-intro" className='mt-[25px] lg:mt-[75px]'>
             <div className='text-[#242331] font-[Poppins] text-[30px] md:text-[40px] lg:text-[44px] lg:leading-[55px] font-[600] block lg:flex lg:justify-center text-center'>
                 <span className='text-[#0C5BC6]'>Save 1000s</span>
                 &nbsp;
@@ -16,7 +16,7 @@ export default function FeatureIntro() {
                 <Image src="/assets/features/intronav.png" alt="introNav" width={1000} height={37} />
             </div>
             <div className='mt-[25px] lg:mt-[56px]'>
-                <Image src="/assets/features/dashboard.png" alt="introNav" width={1298} height={667} />
+                <Image src="/assets/features/dashboard.png" alt="dashboard" width={1298} height={667} />
             </div>
         </div>
     )

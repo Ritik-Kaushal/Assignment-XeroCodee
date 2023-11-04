@@ -51,13 +51,14 @@ export default function Navbar() {
             </div>
 
             {/* For smaller screens */}
-            <div className="flex xl:hidden p-1 rounded border border-gray-500 hover:bg-slate-200" onClick={() => { setShowNav((prev) => !prev); }}>
+            <div className="flex xl:hidden p-1 rounded border border-gray-500 hover:bg-slate-200" onClick={() => { setShowNav((prev) => !prev); }} data-testid="toggle-button">
                 <OffScreenNavButton width={30} height={30} />
             </div>
 
-            <div
-                className={`flex flex-col fixed inset-y-0 top-4 left-0 w-64 sm:w-[420px] p-4 bg-white border border-gray-200 rounded shadow-md transform ${showNav ? '' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}
+            {showNav && <div
+                className={`flex xl:hidden flex-col fixed inset-y-0 top-4 left-0 w-64 sm:w-[420px] p-4 bg-white border border-gray-200 rounded shadow-md transform ${showNav ? '' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}
                 ref={offScreenRef}
+                data-testid="navigation-menu"
             >
                 <div className="font-bold text-lg select-none flex justify-center align-middle text-center p-2">
                     <Image src="/logo.png" alt="Xero Codee" width="164" height="40" />
@@ -67,7 +68,7 @@ export default function Navbar() {
                         <a href={item.link} key={index} className="text-black hover:text-gray-800 font-normal text-lg select-none border border-gray-500 p-2 m-2 rounded-lg hover:bg-gray-100">{item.name}</a>
                     )
                 })}
-            </div>
+            </div>}
         </nav>
     )
 }

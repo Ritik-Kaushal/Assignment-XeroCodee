@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function Comaprison() {
+export default function Comparison() {
     return (
-        <div className='mt-[50px] lg:mt-[120px] flex gap-[20px] lg:gap-[238px]'>
+        <div data-testid="comparison" className='mt-[50px] lg:mt-[120px] flex gap-[20px] lg:gap-[238px]'>
             <div className='p-2 w-1/2 flex flex-col'>
                 <div className='font-[nunito] font-[700] text-[20px] md:text-[28px] leading-[30.8px] text-center'>
                     Without Xerocodee

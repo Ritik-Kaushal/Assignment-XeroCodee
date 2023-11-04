@@ -2,15 +2,17 @@ import CheveronLeft from '@/icons/cheveronLeft'
 import CheveronRight from '@/icons/cheveronRight'
 import Image from 'next/image'
 
-export default function Testimonails() {
+export default function Testimonials() {
     return (
-        <div>
+        <div data-testid="testimonials">
             <div className='font-[poppins] font-[600] text-[30px] md:text-[40px] lg:text-[44px] leading-[61.6px] text-center text-[#332C5C] lg:mt-[120px]'>
                 See Our Success Stories
             </div>
 
             <div className='flex flex-row items-center justify-between mt-8'>
-                <div className='w-[30px] h-[30px] md:w-[46px] md:h-[46px] rounded-full bg-[#293FCC] flex items-center justify-center'>
+                <div
+                    data-testid="cheveron-left"
+                    className='w-[30px] h-[30px] md:w-[46px] md:h-[46px] rounded-full bg-[#293FCC] flex items-center justify-center'>
                     <CheveronLeft height={20} width={20} color='white' />
                 </div>
 
@@ -41,7 +43,9 @@ export default function Testimonails() {
                         </div>
                     </div>
                 </div>
-                <div className='w-[30px] h-[30px] md:w-[46px] md:h-[46px] rounded-full bg-[#293FCC] flex items-center justify-center'>
+                <div
+                    data-testid="cheveron-right"
+                    className='w-[30px] h-[30px] md:w-[46px] md:h-[46px] rounded-full bg-[#293FCC] flex items-center justify-center'>
                     <CheveronRight width={20} height={20} color='white' />
                 </div>
             </div>

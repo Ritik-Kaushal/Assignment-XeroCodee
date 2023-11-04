@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Intro() {
     return (
-        <div>
+        <div data-testid="intro-component">
             <div className='flex flex-col items-center'>
                 <div className='text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold mt-12 w-3/4 text-center'>
                     Build your audience and grow your brand

@@ -1,6 +1,6 @@
 import React from 'react'
 import FeatureIntro from './intro'
-import Comaprison from './comparison'
+import Comparison from './comparison'
 import Infrastructure from './infrastructure'
 import Description from './description'
 import XeroCodeeWay from './xerocodeeWay'
@@ -12,7 +12,7 @@ export default function Features() {
                 Features
             </button>
             <FeatureIntro />
-            <Comaprison />
+            <Comparison />
             <Infrastructure />
             <Description />
             <XeroCodeeWay />

@@ -12,7 +12,9 @@ interface PointComponentInterface {
 }
 export default function Point({ PointNo, heading, subheading, stepsList }: PointComponentInterface) {
     return (
-        <div className='pt-[20px] lg:pt-[82px]'>
+        <div
+            data-testid="point"
+            className='pt-[20px] lg:pt-[82px]'>
             <div className='flex flex-col items-center mb-[25px] lg:mb-[50px]'>
                 <div className='font-[poppins] font-[600] text-[24px] md:text-[30] lg:text-[36px] lg:leading-[45px] text-center'>{PointNo < 10 ? "0" + PointNo : PointNo}</div>
                 <Underline />

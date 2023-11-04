@@ -3,7 +3,10 @@ import React from 'react'
 
 export default function Subscribe() {
     return (
-        <div className='w-full h-fit rounded-[60px] bg-[#C6DEFF] pb-6 lg:pb-[80px] my-[50px] lg:my-[70px]'>
+        <div
+            data-testid="subscribe"
+            className='w-full h-fit rounded-[60px] bg-[#C6DEFF] pb-6 lg:pb-[80px] my-[50px] lg:my-[70px]'>
+
             <div className='hidden text-center lg:flex justify-center p-[60px]'>
                 <Image src="/assets/subscribe/plane.png" alt="plane" height={112} width={150} />
             </div>
@@ -29,7 +32,6 @@ export default function Subscribe() {
                     </button>
                 </div>
             </div>
-
         </div>
     )
 }
