@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
 import { footerContentList } from '../../utils/footer'
-import SocialCircle from '@/icons/socialCircle'
 import FooterSection from './footerSection'
 
 export default function Footer() {
