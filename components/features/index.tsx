@@ -4,7 +4,6 @@ import Comaprison from './comparison'
 import Infrastructure from './infrastructure'
 import Description from './description'
 import XeroCodeeWay from './xerocodeeWay'
-import Testimonails from './testimonials'
 
 export default function Features() {
     return (
@@ -17,7 +16,6 @@ export default function Features() {
             <Infrastructure />
             <Description />
             <XeroCodeeWay />
-            <Testimonails />
         </div>
     )
 }

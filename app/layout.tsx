@@ -1,5 +1,6 @@
 import Navbar from '@/components/navbar'
 import './globals.css'
+import Footer from '@/components/footer'
 
 export const metadata = {
   title: 'Xero Codee',
@@ -17,8 +18,13 @@ export default function RootLayout({
         <div className="fixed top-4 right-4 left-4 xl:left-[165px] xl:right-[165px] md:left-[100px] md:right-[100px] z-10">
           <Navbar />
         </div>
-        <div className='relative top-[110px] h-screen px-4 xl:px-[165px] md:px-[100px] pb-[150px] overflow-y-auto overflow-x-hidden'>
-          {children}
+        <div className='relative top-[110px] h-screen overflow-y-auto overflow-x-hidden pb-[200px]'>
+          <div className='px-4 xl:px-[165px] md:px-[100px]'>
+            {children}
+          </div>
+          <div className='mt-[100px]'>
+            <Footer />
+          </div>
         </div>
       </body>
     </html >

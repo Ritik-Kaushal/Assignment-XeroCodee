@@ -1,5 +1,6 @@
+import CheveronLeft from '@/icons/cheveronLeft'
+import CheveronRight from '@/icons/cheveronRight'
 import Image from 'next/image'
-import React from 'react'
 
 export default function Testimonails() {
     return (
@@ -10,9 +11,7 @@ export default function Testimonails() {
 
             <div className='flex flex-row items-center justify-between mt-8'>
                 <div className='w-[30px] h-[30px] md:w-[46px] md:h-[46px] rounded-full bg-[#293FCC] flex items-center justify-center'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" className="bi bi-chevron-left" viewBox="0 0 16 16">
-                        <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                    </svg>
+                    <CheveronLeft height={20} width={20} color='white' />
                 </div>
 
                 <div className='w-[260px] sm:w-[400px] md:w-[500px] lg:w-[800px] min-h-[230px] xl:w-[1000px] custom-inner custom-outer mx-[8px] sm:mx-[20px] md:mx-[53px] flex flex-col lg:flex-row'>
@@ -43,9 +42,7 @@ export default function Testimonails() {
                     </div>
                 </div>
                 <div className='w-[30px] h-[30px] md:w-[46px] md:h-[46px] rounded-full bg-[#293FCC] flex items-center justify-center'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" className="bi bi-chevron-right" viewBox="0 0 16 16">
-                        <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                    </svg>
+                    <CheveronRight width={20} height={20} color='white' />
                 </div>
             </div>
             <div className='flex flex-row p-2 mt-4 space-x-1 justify-center'>
